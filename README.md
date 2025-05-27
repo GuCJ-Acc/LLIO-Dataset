@@ -1,6 +1,11 @@
 # LLIO-Dataset
 This is a legged robot dataset containing leg kinematics (joint encoders), imu and lidar.
 
+<p align='center'>
+    <img src="https://github.com/GuCJ-Acc/LLIO-Dataset/blob/master/figure/dataset-wildOvervie.png" alt="drawing" width="600"/>
+</p>
+
+
 ## sequence
 - **forest**: The robots operating in the forests, which face monotonous environments and are prone to deterioration in localization performance.
 - **grass**: The robot operating on the grass, where the ground is uneven and open.
