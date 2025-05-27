@@ -2,7 +2,7 @@
 This is a legged robot dataset containing leg kinematics (joint encoders), imu and lidar.
 
 <p align='center'>
-    <img src="https://github.com/GuCJ-Acc/LLIO-Dataset/blob/master/figure/dataset-wildOvervie.png" alt="drawing" width="600"/>
+    <img src="https://github.com/GuCJ-Acc/LLIO-Dataset/blob/master/figure/datasetOverview.png" alt="drawing" width="600"/>
 </p>
 
 
