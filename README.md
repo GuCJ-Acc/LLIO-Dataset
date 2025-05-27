@@ -35,4 +35,32 @@ legThighLength: 0.3
 legThighOffset: 0.11642
 ```
 
+## Sensor Information
+### sensor type
+The data set includes LiDAR, IMU, joint encoders, etc. Taking the sequence **roughTerrain** as an example, the specific data format types are as follows:
 
+```
+path:        roughTerrain.bag
+version:     2.0
+duration:    11:58s (718s)
+start:       May 20 2025 16:57:04.69 (1747731424.69)
+end:         May 20 2025 17:09:03.07 (1747732143.07)
+size:        4.0 GB
+messages:    376802
+compression: none [3562/3562 chunks]
+types:       sensor_msgs/Imu         [6a62c6daae103f4ff57a132d6f95cec2]
+             sensor_msgs/JointState  [3066dcd76a6cfaef579bd0f34173e9fd]
+             sensor_msgs/PointCloud2 [1158d486dd51d683ce2f1be655c3c181]
+topics:      /joint_states      119398 msgs    : sensor_msgs/JointState 
+             /velodyne_points     7122 msgs    : sensor_msgs/PointCloud2
+             /xsens/imu/data    250282 msgs    : sensor_msgs/Imu
+```
+### /velodyne_points : sensor_msgs/PointCloud2
+This is the data provided by velodyne VLP16 lidar at roughly 10 HZ.
+### /xsens/imu/data: sensor_msgs/Imu
+This is the data provided by MTi 630, which contain measurement information of 9-axis (acceleration, angular velocity, quaternion).
+### /joint_states: sensor_msgs/JointState
+This is the data provided by X20 joint encoder, which contain measurement information of joint angle, joint angular velocity and joint torque.
+
+### Note
+For detailed information on sequences with the **A1_** label, please refer to the [legkilo-dataset](https://github.com/ouguangjun/legkilo-dataset/tree/main).
