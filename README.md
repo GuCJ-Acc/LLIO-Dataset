@@ -16,7 +16,7 @@ This is a legged robot dataset containing leg kinematics (joint encoders), imu a
 
 
 ### Rosbag Download
-- Some rosbag for the sequence is provided in link [Google Drive](https://drive.google.com/drive/folders/1w2_4lR7wVIgLpnxfRJwVT1kJBXl-jMyI), which contains the ground truth. We obtain truth values through RTK sensor.
+- Some of the sequence is provided in link [Google Drive](https://drive.google.com/drive/folders/1w2_4lR7wVIgLpnxfRJwVT1kJBXl-jMyI), which contains the ground truth. We obtain truth values through RTK sensor. We will publish other datasets in the future.
 - The sequence with **A1_** label can be used for testing the [Leg-KILO](https://github.com/ouguangjun/Leg-KILO), and our tested the pole length parameters of the legged robot as follows:
 
 ```
