@@ -55,6 +55,15 @@ topics:      /joint_states      119398 msgs    : sensor_msgs/JointState
              /velodyne_points     7122 msgs    : sensor_msgs/PointCloud2
              /xsens/imu/data    250282 msgs    : sensor_msgs/Imu
 ```
+### sensor extrinsic parameters
+Extrinsic parameters from IMU to LiDAR.
+```
+# IMU to LiDAR extrinsic parameters
+extrinsic_T: [ 0, 0, 0.05]
+extrinsic_R: [ 1, 0, 0, 
+                0, 1, 0, 
+                0, 0, 1]
+```
 ### /velodyne_points : sensor_msgs/PointCloud2
 This is the data provided by velodyne VLP16 lidar at roughly 10 HZ.
 ### /xsens/imu/data: sensor_msgs/Imu
