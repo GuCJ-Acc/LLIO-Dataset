@@ -56,10 +56,16 @@ topics:      /joint_states      119398 msgs    : sensor_msgs/JointState
              /xsens/imu/data    250282 msgs    : sensor_msgs/Imu
 ```
 ### sensor extrinsic parameters
-Extrinsic parameters from IMU to LiDAR.
+Extrinsic parameters from IMU to LiDAR and from Robot-body to IMU.
 ```
 # IMU to LiDAR extrinsic parameters
 extrinsic_T: [ 0, 0, 0.05]
+extrinsic_R: [ 1, 0, 0, 
+                0, 1, 0, 
+                0, 0, 1]
+
+# Robot-body to IMU extrinsic parameters
+extrinsic_T: [ 0, 0, 0.273]
 extrinsic_R: [ 1, 0, 0, 
                 0, 1, 0, 
                 0, 0, 1]
